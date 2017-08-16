@@ -2,7 +2,7 @@ package main
 
 import (
 	"errors"
-	"log"
+	"fmt"
 )
 
 func errorsNewSsample() error {
@@ -12,6 +12,7 @@ func errorsNewSsample() error {
 
 func main() {
 	err := errorsNewSsample()
-	log.Printf("err: %+v", err)
-	log.Printf("err: %T", err)
+
+	fmt.Println(err)
+	fmt.Printf("%T\n", err)
 }

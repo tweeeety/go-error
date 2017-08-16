@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"log"
 )
 
 func fmtErrorfSsample(str string) error {
@@ -12,6 +11,6 @@ func fmtErrorfSsample(str string) error {
 
 func main() {
 	err := fmtErrorfSsample("hogehoge")
-	log.Printf("err: %+v", err)
-	log.Printf("err: %T", err)
+	fmt.Println(err)
+	fmt.Printf("%T\n", err)
 }
